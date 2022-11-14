@@ -10,8 +10,12 @@ runs:
 inputs:
   base:
     description: "Base branch to compare with (defaults to master)"
-  special_files:
-    description: "File filters to check against for diffs"
+  unreleased_files:
+    description: "File filters to check against unreleased versions"
+  newrelease_files:
+    description: "File filters to check against for new release files"
+  changelog_files:
+    description: "File filters to check against the changelist file"
 branding:
   color: 'green'
   icon: 'activity'
