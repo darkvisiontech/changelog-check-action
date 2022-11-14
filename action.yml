@@ -5,11 +5,13 @@ author: 'softprops'
 env:
   'GITHUB_TOKEN': 'Repository token provided by Github Actions secrets'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 inputs:
   base:
     description: "Base branch to compare with (defaults to master)"
+  special_files:
+    description: "File filters to check against for diffs
 branding:
   color: 'green'
   icon: 'activity'
