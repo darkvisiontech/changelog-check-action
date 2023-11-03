@@ -10,12 +10,18 @@ runs:
 inputs:
   base:
     description: "Base branch to compare with (defaults to master)"
-  unreleased_files:
-    description: "File filters to check against unreleased versions"
-  newrelease_files:
-    description: "File filters to check against for new release files"
-  changelog_files:
-    description: "File filters to check against the changelist file"
+  hades_unreleased_files:
+    description: "File filters to check against Hades unreleased versions"
+  hades_newrelease_files:
+    description: "File filters to check against Hades for new release files"
+  hades_changelog_files:
+    description: "File filters to check against Hades the changelist file"
+  ili_unreleased_files:
+    description: "File filters to check against ILI unreleased versions"
+  ili_newrelease_files:
+    description: "File filters to check against ILI for new release files"
+  ili_changelog_files:
+    description: "File filters to check against ILI the changelist file"
 branding:
   color: 'green'
   icon: 'activity'
